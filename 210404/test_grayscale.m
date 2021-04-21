@@ -1,0 +1,9 @@
+I1 = imread('Atrium2.jpg')
+I1 = rgb2gray(I1); imshow(I1);
+I2 = grayslice(I1,128); figure, imshow(I2,gray(128));
+I3 = grayslice(I1,64); figure, imshow(I3,gray(64));
+I4 = grayslice(I1,32); figure, imshow(I4,gray(32)); 
+I5 = grayslice(I1,16); figure, imshow(I5,gray(16)); 
+I6 = grayslice(I1,8); figure, imshow(I6,gray(8));
+I7 = grayslice(I1,4); figure, imshow(I7,gray(4));
+I8 = grayslice(I1,2); figure, imshow(I8,gray(2));
