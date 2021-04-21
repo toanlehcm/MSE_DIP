@@ -24,3 +24,10 @@ subplot(2,2,4), imshow(I_sob2), title('Sobel on noise');
 I_sob3 = edge(I,'sobel','nothinning');
 figure, subplot(1,2,1), imshow(I_sob1), title('Thinning');
 subplot(1,2,2), imshow(I_sob3), title('No Thinning');
+% 7. Display the horizontal and vertical convolution results from the Sobel operator.
+[I_sob4,t,I_sobv,I_sobh] = edge(I,'sobel');
+figure
+subplot(2,2,1), imshow(I), title('Original Image');
+subplot(2,2,2), imshow(I_sob4), title('Complete Sobel');
+subplot(2,2,3), imshow(abs(I_sobv),[]), title('Sobel Vertical');
+subplot(2,2,4), imshow(abs(I_sobh),[]), title('Sobel Horizontal');
