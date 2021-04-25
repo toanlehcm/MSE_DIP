@@ -1,8 +1,0 @@
-% 1. Load and display the test image.
-I = imread('coins.png');
-figure, imshow(I), title('Original Image');
-% 2. Display a histogram plot of the coins image to determine what threshold level to use.
-figure, imhist(I), title('Histogram of Image');
-% 4. Set the threshold value to 85 and generate the new image.
-T = 85; I_thresh = im2bw(I,( T / 255));
-figure, imshow(I_thresh), title('Threshold Image (heuristic)');
